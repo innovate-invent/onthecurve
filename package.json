@@ -1,0 +1,120 @@
+{
+  "name": "spa_template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint",
+    "ci": "yarn install --frozen-lockfile"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.1",
+    "vue-router": "^3.1.6",
+    "vuetify": "^2.2.21",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-plugin-typescript": "~4.3.0",
+    "@vue/cli-plugin-unit-jest": "~4.3.0",
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "1.0.0-beta.31",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "frontmatter-markdown-loader": "^3.3.0",
+    "markdown-it-deflist": "^2.0.3",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.19.1",
+    "material-design-icons-iconfont": "^5.0.1",
+    "sass-loader": "^8.0.2",
+    "string-replace-loader": "^2.3.0",
+    "typescript": "~3.8.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      "@vue/prettier",
+      "@vue/prettier/@typescript-eslint"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "vue/camelcase": "warn",
+      "@typescript-eslint/camelcase": "warn",
+      "@typescript-eslint/ban-ts-ignore": "warn",
+      "@typescript-eslint/explicit-function-return-type": [
+        "warn",
+        {
+          "allowTypedFunctionExpressions": true
+        }
+      ],
+      "vue/comma-dangle": "error",
+      "vue/component-tags-order": [
+        "error",
+        {
+          "order": [
+            "template",
+            "script",
+            "style"
+          ]
+        }
+      ],
+      "vue/eqeqeq": "warn",
+      "vue/key-spacing": "warn",
+      "vue/no-deprecated-scope-attribute": "warn",
+      "vue/no-deprecated-slot-attribute": "warn",
+      "vue/no-deprecated-slot-scope-attribute": "warn",
+      "vue/padding-line-between-blocks": "warn",
+      "vue/valid-v-bind-sync": "error",
+      "vue/valid-v-slot": "error",
+      "vue/singleline-html-element-content-newline": "off",
+      "vue/max-attributes-per-line": [
+        "error",
+        {
+          "singleline": 6
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "jest": {
+    "preset": "@vue/cli-plugin-unit-jest/presets/typescript-and-babel"
+  }
+}
